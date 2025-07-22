@@ -16,9 +16,6 @@ This project leverages **TF-IDF + Cosine Similarity** to match user profiles wit
 
 ---
 
-
----
-
 ## ⚙️ Installation & Running Locally
 
 ### 1. Clone the Repository
