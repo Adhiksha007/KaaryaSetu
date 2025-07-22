@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Recommender</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+
+    <div class="main-container" id="home">
+        <!-- Header Section -->
+        <div class="hero-section section">
+            <div class="container header">
+                <div class="logo">
+                    <a href="#home">KaaryaSetu</a>
+                </div>
+                <div class="links">
+                    <ul class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="{{ url_for('recommend') }}">Find Jobs</a></li>
+                        <li><a href="#kaaryasetu">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container hero-info">
+                 <div class="hero-content">
+                    <p><br>Find the perfect job based on your skills and qualifications <br>
+                        <span class="span1">Welcome to</span><br>
+                        <span class="span2">KaaryaSetu</span></p>
+                </div>
+                <div class="img-show">
+                    <img src="../static/images/image1.jpg" alt="hero-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- KaaryaSetu Info section -->
+        <div class="info">
+            <section class="kaaryasetu section top-padd" id="kaaryasetu">
+                <div class="container">
+                    <div class="row">
+                        <div class="text">
+                            <div class="section-title">
+                                <h2>KaaryaSetu</h2>
+                            </div>
+                            <div class="kaaryasetu-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima in harum, voluptate 
+                                    minus quam amet non qui! Voluptas commodi recusandae ea laudantium, a perferendis, 
+                                    numquam ipsa libero magnam eos alias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Explicabo repudiandae tempore sequi repellendus architecto odio 
+                                    saepe eligendi doloribus quasi officiis ipsam, fugit inventore dolor, accusantium modi corrupti
+                                    quod consectetur provident.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="kaaryasetu-img">
+                            <img src="../static/images/banner-img.png" alt="banner-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KaaryaSetu Work Setup -->
+             <section class="work-setup section top-padd" id="work-setup">
+                <div class="container">
+                    <div class="row">
+                        <div class="image-col">
+                            <img src="../static/images/work.jpg" alt="Work">
+                        </div>
+                        <div class="text-col">
+                            <div class="work-title">
+                                <h1>How it Work?</h1>
+                            </div>
+                            <div class="work-details">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis praesentium vero 
+                                    nisi eligendi adipisci quis. Sunt placeat totam ratione facilis excepturi nobis. 
+                                    Dolorum eos ad suscipit ipsum. Iste, at quae! Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Iste doloribus itaque modi unde dolores, 
+                                    nulla rem impedit corporis id animi, vitae dignissimos cumque est corrupti tenetur quis quos dolorum quibusdam?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+             <!-- features section -->
+            <section class="features section top-padd" id="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="features-title">
+                            <h1>Key Features</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box-content">
+                            <div class="box-inner">
+                                <div class="icon">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h3>AI-powered recommendations</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis praesentium vero 
+                                    nisi eligendi adipisci quis.</p>
+                            </div>  
+                        </div>
+                        <div class="box-content">
+                            <div class="box-inner">
+                                <div class="icon">
+                                    <i class="fa-solid fa-filter"></i>
+                                </div>
+                                <h3>Skills-based filtering</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis praesentium vero 
+                                    nisi eligendi adipisci quis.</p>
+                            </div>  
+                        </div>
+                        <div class="box-content">
+                            <div class="box-inner">
+                                <div class="icon">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </div>
+                                <h3>Easy application process</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis praesentium vero 
+                                    nisi eligendi adipisci quis.</p>
+                            </div>  
+                        </div>
+                        <div class="box-content">
+                            <div class="box-inner">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <h3>Real-time alerts</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis praesentium vero 
+                                    nisi eligendi adipisci quis.</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+             <section class="contact section top-padd" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h1>Contact Us</h1>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">Have You Any Query?</h3>
+                    <div class="row">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p>+91 12345 67890</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Location</h4>
+                            <p>Sun</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>abcd@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa fa-globe-asia"></i>
+                            </div>
+                            <h4>Website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                    </div>
+                    <h3 class="message-title">Send a Message</h3>
+                    <div class="row">
+                        <div class="contact-form">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="button">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <section class="section footer">
+                <footer class="py-4">
+                    <div class="container text-center">
+                        <p class="mb-1">&copy; 2025 KaaryaSetu. All rights reserved.</p>
+                        <p class="mb-1">Empowering careers through smart job recommendations.</p>
+                    </div>
+                </footer>
+             </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
