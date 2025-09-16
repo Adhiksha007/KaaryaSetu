@@ -1,0 +1,98 @@
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
+.sidebar-container{
+    background: var(--bg-black-100);
+    min-height: 100vh;
+    border-radius: 20px;
+}
+body{
+    background: var(--bg-black-900);
+}
+.list-group{
+    padding-top: 20px;
+}
+.sidebar-link{
+    background: var(--bg-black-100);
+    color: var(--text-black-700);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.section-content { 
+    display: none; 
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    border-radius: 30px;
+}
+.form-control{
+    background-color: var(--bg-black-100);
+    color: var(--text-black-900);
+    border: 0.1px solid --text-black-700;
+}
+.form-control::placeholder{
+    color: var(--text-black-700);
+}
+.education-entry, .experience-entry{
+    background: var(--bg-black-900);
+}
+.section-content.active { 
+    display: block; 
+}
+.sidebar-link { 
+    cursor: pointer;
+}
+.password{
+    background: var(--bg-black-900);
+    color: var(--text-black-900);
+}
+/* Sidebar styles for small screens */
+@media (max-width: 768px) {
+    .sidebar-container {
+        background: transparent;
+        position: fixed;
+        min-height: auto;
+        top: 10px;
+        left: 0;
+        height: auto;
+        width: 250px;
+        padding-bottom: 20px;
+        z-index: 1040;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar-container.show {
+        transform: translateX(40px);
+    }
+    #toggleSidebar {
+        display: block;
+    }
+}
+
+/* Keep sidebar always visible on large screens */
+@media (min-width: 769px) {
+.sidebar-container {
+    transform: none !important;
+    position: static;
+    height: auto;
+    box-shadow: none;
+    
+}
+
+#toggleSidebar {
+display: none;
+}
+}

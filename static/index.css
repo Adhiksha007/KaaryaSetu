@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
+body{
+    background: var(--bg-black-900);
+    color: var(--text-black-700);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar {
+    transition: top 0.3s ease-in-out;
+    top: 0;
+    z-index: 1030; /* Bootstrap’s navbar default z-index */
+    background: var(--bg-black-100);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#mainNavbar {
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-hide {
+  top: -100px !important;
+}
+.pagination .page-item .page-link{
+    background: var(--bg-black-50);
+    color: var(--text-black-900) !important;
+}
+.navbar-nav .nav-item a {
+    text-decoration: none;
+    color: var(--text-black-900);
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-item a:hover {
+    color: #007bff;
+}
+.job-title{
+    padding: 40px 0;
+}
+.form{
+    margin: 20px auto;
+}
+.form-select,
+.form-control{
+    background-color: var(--bg-black-50);
+    color: var(--text-black-900);
+    border: 0.1px solid --text-black-700;
+}
+
+.container .card{
+    background: var(--bg-black-100);
+    color: var(--text-black-700);
+}
+.modal-body{
+    background: var(--bg-black-900);
+    color: var(--text-black-700);
+}
+.side{
+    background: var(--bg-black-100);
+}
+strong{
+    color: var(--text-black-900);
+}
