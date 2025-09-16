@@ -1,5 +1,6 @@
 scikit-learn
 joblib
 pandas
+gunicorn
 flask_sqlalchemy 
 flask-mail
